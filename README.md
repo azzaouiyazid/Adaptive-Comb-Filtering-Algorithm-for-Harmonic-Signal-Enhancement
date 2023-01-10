@@ -11,7 +11,7 @@ alpha: the filter coefficient, between 0 and 1.
 It returns the filtered signal.
 
 Here's an example of how to use the function:
-
+'''python
 import numpy as np
 from adaptive_comb_filter import adaptive_comb_filter
 
