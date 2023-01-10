@@ -35,15 +35,3 @@ plt.plot(t, signal)
 plt.plot(t, filtered_signal)
 plt.show()
 
-
-# In[2]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
