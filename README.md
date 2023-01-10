@@ -4,10 +4,10 @@ This project implements an adaptive comb filtering algorithm for the enhancement
 # Usage
 The main function of the project is adaptive_comb_filter(signal, fs, f0, alpha). It takes as input:
 
-signal: the input signal to be filtered.
-fs: the sampling frequency of the input signal.
-f0: the estimated fundamental frequency of the harmonic signal.
-alpha: the filter coefficient, between 0 and 1.
+## signal: the input signal to be filtered.
+## fs: the sampling frequency of the input signal.
+## f0: the estimated fundamental frequency of the harmonic signal.
+## alpha: the filter coefficient, between 0 and 1.
 It returns the filtered signal.
 
 Here's an example of how to use the function:
@@ -18,12 +18,13 @@ from adaptive_comb_filter import adaptive_comb_filter
 ```
 
 # Set the parameters
-fs = 44100 # Sampling frequency
-f0 = 1000 # Fundamental frequency
+
+fs = 44100 # Sampling frequency<br>
+f0 = 1000 # Fundamental frequency<br>
 alpha = 0.9 # Filter coefficient
 
 # Generate a synthetic harmonic signal with additive white noise
-t = np.linspace(0, 1, fs)
+t = np.linspace(0, 1, fs)<br>
 signal = np.sin(2*np.pi*f0*t) + 0.1*np.random.randn(len(t))
 
 # Enhance the signal using the adaptive comb filter
