@@ -4,10 +4,10 @@ This project implements an adaptive comb filtering algorithm for the enhancement
 # Usage
 The main function of the project is adaptive_comb_filter(signal, fs, f0, alpha). It takes as input:
 
-## signal: the input signal to be filtered.
-## fs: the sampling frequency of the input signal.
-## f0: the estimated fundamental frequency of the harmonic signal.
-## alpha: the filter coefficient, between 0 and 1.
+### signal: the input signal to be filtered.
+### fs: the sampling frequency of the input signal.
+### f0: the estimated fundamental frequency of the harmonic signal.
+### alpha: the filter coefficient, between 0 and 1.
 It returns the filtered signal.
 
 Here's an example of how to use the function:
