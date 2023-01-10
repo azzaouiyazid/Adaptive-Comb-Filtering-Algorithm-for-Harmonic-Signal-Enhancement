@@ -11,9 +11,11 @@ alpha: the filter coefficient, between 0 and 1.
 It returns the filtered signal.
 
 Here's an example of how to use the function:
-'''python
+
+```python
 import numpy as np
 from adaptive_comb_filter import adaptive_comb_filter
+```
 
 # Set the parameters
 fs = 44100 # Sampling frequency
@@ -26,18 +28,20 @@ signal = np.sin(2*np.pi*f0*t) + 0.1*np.random.randn(len(t))
 
 # Enhance the signal using the adaptive comb filter
 filtered_signal = adaptive_comb_filter(signal, fs, f0, alpha)
+
 You can also plot the original and filtered signal like this
 
-
+```python
 import matplotlib.pyplot as plt
 plt.plot(t, signal)
 plt.plot(t, filtered_signal)
 plt.show()
+```
 The output will look like this :
 
 ![Screenshot 2023-01-07 143052](https://user-images.githubusercontent.com/78693054/211544936-2ee3390d-6e03-499d-8fe1-682fbf1bd104.png)
 
 As shown in the above image, the filtered signal is an enhanced version of the input signal with reduced noise.
 
-#Conclusion :
+# Conclusion :
 This adaptive comb filtering algorithm is able to effectively enhance harmonic signals in the presence of additive white noise. The performance of the algorithm is analyzed through the calculation of the asymptotic Cramer-Rao bound (CRB) on the parameters of the harmonic signals. Simulations are carried out to compare the variances of the estimates to the CRB, and to demonstrate the ability of the algorithm to enhance noisy artificial periodic signals.
